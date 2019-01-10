@@ -39,6 +39,7 @@
 	</div>
 
 	<div *ngIf="!inClockSelection" class="month-grid">
+	<div [ngStyle]="{'margin-left':'15px'}">
 		<div class="day-names" [ngClass]="{ disappear: inYearSelection }">
 			<div *ngFor="let name of dayNames" class="day-name p9">
 			{{ name }}
@@ -76,6 +77,7 @@
 		  </ng-container>
 		</div>
 	  </div>
+	</div>
 	</div>
 
 	<div class="clock-grid" *ngIf="inClockSelection">
